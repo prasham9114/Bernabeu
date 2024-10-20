@@ -1,0 +1,38 @@
+body{
+  background-image: url('../images/page-bg.jpg');
+  background-size: 80rem;
+}
+
+.about-page {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+  
+  .about-page h1 {
+    text-align: center;
+    color: #00FFFF; 
+    margin-bottom: 2rem;
+  }
+  
+  .about-content {
+    background-color: #1E1E1E;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .about-section {
+    margin-bottom: 2rem;
+
+  }
+  
+  .about-section h2 {
+    color: #FF00FF; 
+    margin-bottom: 1rem;
+    background-image: none;
+  }
+  
+  .about-section p {
+    line-height: 1.6;
+  }

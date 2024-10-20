@@ -1,0 +1,109 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(30, 30, 30, 0.5);
+  color: white;
+  z-index: 1000; 
+  transition: transform 0.3s ease-in-out;
+  height: 2rem;
+}
+
+.navbar-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hotpink;
+  text-decoration: none;
+  position: relative;
+  margin-left: 6rem;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin-left: 1rem;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #FF00FF;
+}
+
+.navbar-links a.active {
+  color: #FF00FF;
+  font-weight: bold;
+}
+
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.navbar-logo {
+  transform: translateX(-5rem);
+  position: relative;
+}
+
+/* Mobile/Tablet styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.9);
+    z-index: 999;
+    padding: 1rem 0;
+    
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin-left: 0; 
+    border-bottom: 1px solid #ffffff; /* Add a line between items */
+    padding: 1rem 2rem; 
+  }
+  .navbar-links li:nth-child(1) {
+    border-top: 1px solid #ffffff; /* add top border for the first item */
+  }
+  .navbar-links li:last-child {
+    border-bottom: none; /* Remove bottom border from the last item */
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other content */
+  }
+
+  .navbar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+    margin-right: 2rem;
+  }
+
+  .navbar-logo a {
+    font-size: 1rem;
+  }
+}

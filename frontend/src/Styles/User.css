@@ -1,0 +1,63 @@
+.user-page {
+  padding: 2rem;
+  background-image: url('../images/page-bg.jpg');
+  background-size: cover;
+  padding-top: 7rem;
+  color: #FFFFFF;
+}
+
+.user-page h1 {
+  text-align: center;
+  color: #00FFFF;
+  margin-bottom: 2rem;
+}
+
+.user-info, .order-history {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-info h2, .order-history h2 {
+  color: #FF00FF;
+  margin-bottom: 1rem;
+}
+
+.user-info p {
+  margin-bottom: 0.5rem;
+}
+
+.user-info strong {
+  color: #00FFFF;
+}
+
+.order-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-history li {
+  background-color: #2A2A2A;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.order-history li:hover {
+  background-color: #3A3A3A;
+}
+
+.button
+{
+  color: white;
+  margin: 0rem 2rem;
+  padding: 1rem 2rem;
+  background-color: #ca21ca;
+}
+
+.user-table{
+  display: flex;
+  justify-content: flex-end;
+}
